@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(185, 102, 72);
+    padding: 20px 30px;
+    align-items: center;
+}
+header a{
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+}
+.Le{
+    font-size: 20px;
+}
+nav a{
+    margin-left: 10px;
+}
+nav a:hover{
+    color: black;
+    transition: color 1s;
+}
+
+.imagesection h2{
+    color: white;
+    font-size: 50px;
+}
+.imagesection{
+    background-image: url(13.jpg);
+    padding: 250px 0;
+    text-align: center;
+    width: 100%;
+    height: 500px; 
+}
+.section1{
+    display:flex;
+   justify-content: space-around;
+   font-size: 20px;
+   margin-top: 20px;
+   padding: 20px 0;
+   background-color: #E0D9D2;
+   margin: 0px 20px;
+}
+div a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.menu{
+    padding: 20px 50px;
+}
+
+.menu-title{
+    text-align: center;
+}
+
+
+
+.meal{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+
+}
+.meal-container{
+    width:500px;
+    height: 270px;
+    display: flex;
+    margin-right: 25px;
+    margin-left: 25px;
+    
+}
+.meal-recipe{
+    width: 300px;
+    height: 100%;
+    padding: 30px 20px;
+    background-color: #E0D9D2;
+}
+.meal-image{
+    width: 186px;
+    height: 100%;
+}
+.meal-image img{
+    width: 186px;
+    height: 270px;
+}
+
+.meal-recipe h3{
+    text-align: center;
+    margin-bottom: 30px;
+    color: brown;
+}
+
+/*.meal-recipe p{
+    
+}*/
+footer{
+    padding: 20px 30px;
+    background-color: rgb(185, 102, 72);
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white
+}
+footer h2{
+    margin-bottom: 10px;
+    text-align: center
+}
+
+.location a{
+    display: block;
+    font-size: 20px;
+}
+.links i{
+    font-size: 30px;
+    text-align: center;
+}

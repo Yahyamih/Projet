@@ -1,0 +1,86 @@
+body {
+   background-image: url(./3.jpg);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   width: 100%;
+   padding: 0 10px;
+   height: 100vh;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}  
+.tab {
+  width: 400px;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.call {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+}
+.call label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+  }
+  .call input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+  }
+  .call input:focus~label,
+  .call input:valid~label {
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+  }
+  .tab a {
+    color: #efefef;
+    text-decoration: none;
+  }
+  .tab a:hover {
+    text-decoration: underline;
+  }
+  button {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+  }
+  button:hover {
+    color: #fff;
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+  }
+   

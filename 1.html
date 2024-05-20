@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="1.css">
+  </head>
+</style>
+<body>
+<div class="container">
+    <h2>Login</h2>
+<div class="box-input">
+<form action="file:///C:/Users/pc/Desktop/emsi/home.html" onsubmit="return login()">
+<input type="text" id="in3" placeholder="E-mail"> <br>
+<span id="" style="color:red;"></span><br>
+  <input type="password" id="in4" placeholder="Password"><br>
+  <span id="s2" style="color:red;"></span><br>
+<div class="account-option">
+  <input type="radio"  onclick="showPass()" style="margin-left: -45%;">
+  <a style="margin-left: -45%;">Show password </a>
+  <button id="loginButton">Login</button>
+  <div class="create-account">
+  <p>Don't have an account ? <a href="file:///C:/Users/pc/Desktop/emsi/9.html">Create account</a></p>
+</div>
+</div>
+</form>
+</div>
+</div>
+<script>
+var users=[{username:'yahyamh12@gmail.com',password:'yaya1234'},
+  {username:'ayoubmh21@gmail.com',password:'ayoub22345'}]
+function showPass(){
+    var passInput=document.getElementById('in4');
+    if(passInput.type=='password' ){
+        passInput.type='text';
+    }else if(passInput.type=='text' ){
+        passInput.type='password';
+    }  
+}
+function login(){
+var nameValue=document.getElementById('in3').value;
+var passValue=document.getElementById('in4').value;
+if(nameValue==''){
+document.getElementById('s2').innerHTML='name must be filled out';
+return false;
+}
+else if(passValue==''){
+    document.getElementById('s2').innerHTML='password must be filled out';
+return false;
+}
+for(var i=0;i<users.length;i++){
+    if(users[i].username==nameValue && users[i].password==passValue){
+        return true;
+    }
+            document.getElementById('s2').innerHTML='password and username do not match';
+            return false ;  
+}
+}
+</script>
+</body>
+</html>
